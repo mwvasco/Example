@@ -3,9 +3,9 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     id="com.mwvasco.pushplugintest"
     version="1.2.2">
-
-    <name>PushPlugin</name>
  <gap:plugin name="GenericPush" /> <!-- latest release -->
+    <name>PushPlugin</name>
+
 <access origin="*.pushwoosh.com"/>
   <asset src="www/PushNotification.js" target="PushNotification.js" />
  
