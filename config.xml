@@ -3,7 +3,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     id="com.adobe.plugins.PushPlugin"
     version="1.2.2">
- <gap:plugin name="GenericPush" /> <!-- latest release -->
+ <!-- latest release -->
     <name>PushPlugin</name>
 
 <access origin="*.pushwoosh.com"/>
@@ -55,6 +55,7 @@
 		<!-- Cordova >= 2.3 -->
 		<config-file target="config.xml" parent="plugins">
 			<plugin name="PushPlugin" value="PushPlugin"/>
+			 <gap:plugin name="GenericPush" />
 		</config-file>
         
         <source-file src="AppDelegate+notification.h" />
