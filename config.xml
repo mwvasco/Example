@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
     xmlns:android="http://schemas.android.com/apk/res/android"
-    id="com.adobe.plugins.PushPlugin"
+    id="com.mwvasco.pushplugintest"
     version="1.2.2">
 
     <name>PushPlugin</name>
@@ -20,8 +20,8 @@
 			<uses-permission android:name="android.permission.GET_ACCOUNTS" />
 			<uses-permission android:name="android.permission.WAKE_LOCK" />
 			<uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
-			<permission android:name="$PACKAGE_NAME.permission.C2D_MESSAGE" android:protectionLevel="signature" />
-			<uses-permission android:name="$PACKAGE_NAME.permission.C2D_MESSAGE" />
+			<permission android:name="com.mwvasco.pushplugintest.permission.C2D_MESSAGE" android:protectionLevel="signature" />
+			<uses-permission android:name="com.mwvasco.pushplugintest.permission.C2D_MESSAGE" />
   		</config-file>
   		
      	<config-file target="AndroidManifest.xml" parent="/manifest/application">
@@ -30,7 +30,7 @@
  				<intent-filter>
  					<action android:name="com.google.android.c2dm.intent.RECEIVE" />
  					<action android:name="com.google.android.c2dm.intent.REGISTRATION" />
- 					<category android:name="$PACKAGE_NAME" />
+ 					<category android:name="com.mwvasco.pushplugintest" />
  				</intent-filter>
  			</receiver>
  			<service android:name="com.google.android.gcm.GCMIntentService" />
