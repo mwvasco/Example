@@ -5,9 +5,10 @@
     version="1.2.2">
 
     <name>PushPlugin</name>
-
+ <gap:plugin name="GenericPush" /> <!-- latest release -->
 <access origin="*.pushwoosh.com"/>
   <asset src="www/PushNotification.js" target="PushNotification.js" />
+ 
 
 	<platform name="android">
         <config-file target="res/xml/config.xml" parent="plugins">
